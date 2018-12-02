@@ -9,6 +9,9 @@
     "type": "git",
     "url": "opinator"
   },
+  "dependencies": {
+    "express": "*"
+  },
   "author": "ricardo burczynski",
   "license": "GPL-3.0",
   "keywords": [],
