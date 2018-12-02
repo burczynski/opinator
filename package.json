@@ -10,7 +10,9 @@
     "url": "opinator"
   },
   "dependencies": {
-    "express": "*"
+    "express": "*",
+    "method-override": "*",
+    "body-parser": "*"
   },
   "author": "ricardo burczynski",
   "license": "GPL-3.0",
