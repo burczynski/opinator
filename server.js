@@ -33,7 +33,8 @@ router.route('/newpost')
 		let obj = {
 			name : 'jijo',
 		};
-		console.log(obj);
+
+		console.log(req.body);
 		res.end(JSON.stringify(obj));
 		/*var response = {
 		    status  : 200,

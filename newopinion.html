@@ -12,13 +12,16 @@
 	/****************************************************************************************/
 	getUsers();
 
-	function getUsers() {
-		console.log('va a hacer ajax');
+	function getUsers() {		
 	  $.ajax({
 	  	/****************************************************/
 	  	type : "POST",
 	    url: 'http://localhost:3000/newpost',
 	    dataType: "json",
+	    data: {
+	    	name : 'ricardo',
+	    	age  : '10000000'
+	    },
 	  	/****************************************************/
 	    success: function(aaaaa) {
 	    	console.log('respuesta');
