@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<h1 id="ss">hola mundo</h1>
+<script src="http://code.jquery.com/jquery-1.6.2.min.js"></script>	
+<script type="text/javascript">
+	console.log('hola a todos');
+
+	/****************************************************************************************/
+	getUsers();
+
+	function getUsers() {
+		console.log('va a hacer ajax');
+	  $.ajax({
+	  	/****************************************************/
+	  	type : "POST",
+	    url: 'http://localhost:3000/newpost',
+	    dataType: "json",
+	  	/****************************************************/
+	    success: function(aaaaa) {
+	    	console.log('respuesta');
+	    	console.log(aaaaa);
+	    	$('#ss').text(aaaaa.name);
+
+	    },
+	    error: function() {
+	      console.log("No se ha podido obtener la información");
+	    }
+	  });
+	}
+	/****************************************************************************************/
+</script>
+</body>
+</html>
